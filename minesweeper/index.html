@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="Minesweeper.css" type="text/css" media="screen">
+  <link rel="icon" href="assets/bombcellclick.png" type="image/png"/>
+  <link rel="shortcut icon" href="assets/bombcellclick.png" type="image/png"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="menu">
+      <div id="main">
+        <h1>Minesweeper</h1>
+        <ul>
+          <li><button class="btn play" onclick="startGame()">Start Game</button></li>
+        </ul>
+      </div>
+     <div id="difficulty-menu">
+        <h1>Choose difficulty</h1>
+        <ul>
+          <li><button class="btn difficulty-btn" difficulty="novice">Beginner</button></li>
+          <li><button class="btn difficulty-btn" difficulty="intermediate">Intermediate</button></li>
+          <li><button class="btn difficulty-btn" difficulty="expert">Expert</button></li>
+        </ul>
+     </div>
+    </div>
+    <canvas id="canvas" width="256" height="320">
+      <p>You're browser does not support the required functionality to play this game.</p>
+      <p>Please update to a modern browser such as <a href="www.Firefox.com/‎">Firefox</a> to play.</p>
+    </canvas>
+  </div>
+  <script type="text/javascript" src="Minesweeper.js"></script>
+</body>
+</html>
